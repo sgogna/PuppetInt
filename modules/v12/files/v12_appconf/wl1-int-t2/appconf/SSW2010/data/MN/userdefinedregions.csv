@@ -1,0 +1,38 @@
+# User Defined Regions : Groups of locations that don't map to our existing Location class hierarchy,
+# locationCode, countryCode/countryCode/...
+# ================================,
+# IATA Regions,
+# ================================,
+FLORIDA,"FLL,RSW,JAX,MCO,SRQ,TPA,PBI"
+# ================================,
+
+#state/province code, airportCode/airportCode...
+KY-KY,GCM
+CU-CU,SNU/CCC/HOG/VRA
+US-LA,MSY
+DO-DO,AZS/LRM/POP/PUJ
+BM-BM,BDA
+BB-BB,BGI
+MX-MX,CUN/CZM/MZT/PVR/SJD/ZIH
+US-NY,EWR
+US-FL,FLL/MCO/MIA/RSW/TPA
+BS-BS,FPO/NAS
+US-HI,HNL/KOA/LIH/OGG
+US-NV,LAS
+US-CA,LAX/PSP/SAN/SFO
+JM-JM,MBJ
+US-AZ,PHX
+TC-TC,PLS
+AN-AN,SXM
+LC-LC,UVF
+CA-NL,YDF/YYT
+CA-AB,YEG/YMM/YQU/YYC
+CA-ON,YHM/YKF/YOW/YQG/YQT/YXU/YYZ
+CA-NS,YHZ/YQY
+CA-BC,YKA/YLW/YQQ/YVR/YXS/YXX/YYJ
+CA-QC,YQB/YUL
+CA-NB,YQM
+CA-SK,YQR/YXE
+CA-MB,YWG
+CA-PE,YYG
+CA-NT,YZF

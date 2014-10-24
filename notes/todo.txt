@@ -1,0 +1,6 @@
+- config sets per environment (wl1-int, wl-prod etc.)
+- create manifest for ssw2010 (ver? build?)
+- make Augeas working
+- setup modules: jdk + tomcat + war + config sets in:
+  - dirs like: /apps/ssw/port8081, or /apps/ssw/inst1 /apps/ssw/inst2
+

@@ -1,0 +1,38 @@
+#!/bin/bash
+
+
+###############################################################
+echo "prepare_static_resources.sh ..."
+exit 0
+###############################################################
+
+STATIC_RESOURCES_DIR=`pwd`
+STATIC_RESOURCES_LATEST_DIR=$STATIC_RESOURCES_DIR/latest
+STATIC_RESOURCES_EXTRACTED_DIR=$STATIC_RESOURCES_DIR/extracted
+VERSIONS_LOG_FILE=$STATIC_RESOURCES_LATEST_DIR/versions_log
+
+
+mkdir $STATIC_RESOURCES_EXTRACTED_DIR
+
+rm -rf $STATIC_RESOURCES_LATEST_DIR
+mkdir $STATIC_RESOURCES_LATEST_DIR
+
+for f in $STATIC_RESOURCES_DIR/*.tar.gz
+do
+    echo "Extracting $f..."
+    tar -C $STATIC_RESOURCES_EXTRACTED_DIR -xvf $f 1> /dev/null
+done
+
+echo "" > $VERSIONS_LOG_FILE
+for d in $STATIC_RESOURCES_EXTRACTED_DIR/*
+do
+    latest_version=`ls --ignore=[0-9]*.[0-9a-zA-Z]*.overrides $d | cut -d'.' -f1 | sort -g | tail -1`
+    storefront=`basename $d`
+    echo "$storefront: $latest_version" >> $VERSIONS_LOG_FILE
+    echo "Coping static content from $d/$latest_version.overrides to $STATIC_RESOURCES_LATEST_DIR/$storefront"
+    mkdir $STATIC_RESOURCES_LATEST_DIR/$storefront
+    cp -r -t $STATIC_RESOURCES_LATEST_DIR/$storefront $d/$latest_version.overrides/*
+done
+
+rm -rf $STATIC_RESOURCES_EXTRACTED_DIR
+

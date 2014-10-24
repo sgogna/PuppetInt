@@ -1,0 +1,4 @@
+s2_cluster:
+  s2_app_build: dr-r1.0-b209
+  environment: load
+  logdir_base: /logs/int

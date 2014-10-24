@@ -1,0 +1,7 @@
+# Airline, Farebasis, Faretype, Rule Number, OW price, RT price, OW tax, RT tax
+F7, QOW, XEX, 2255, 100, null, 10, null
+F7, Y, XEX, 2255, 100, 200, 10, 20
+F7, F, XEX, 2255, 300, 200, 10, 20
+F7, JBUS, XEX, 2255, 200, 200, 10, 20
+F7, QSABBUY1, XEX, 2255, 70, 200, 10, 20
+F7, YOW, XEX, 2255, 140, null, 10, null

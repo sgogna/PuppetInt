@@ -1,0 +1,3 @@
+---
+static_resources_config:
+  static_resources_dir: "/nas/sabre/int/config/int/clusters/int6/mock-server/static_content_prod"

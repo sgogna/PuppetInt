@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Server port="<%= 8000+@inst_num %>" shutdown="SHUTDOWN">
+
+  <Listener className="AuthenticatorLifecycleListener"/>
+  <Listener className="org.apache.catalina.core.AprLifecycleListener" />
+  <Listener className="org.apache.catalina.core.JasperListener" />
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+  <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener"/>
+  <Listener className="org.apache.catalina.mbeans.JmxRemoteLifecycleListener" rmiRegistryPortPlatform="<%= @jmx_registry_port %>" rmiServerPortPlatform="<%= @jmx_server_port %>" />
+
+  <GlobalNamingResources>
+
+    <Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+       description="User database that can be updated and saved"
+           factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+          pathname="conf/tomcat-users.xml" readonly="true" />
+
+  </GlobalNamingResources>
+
+  <Service name="Catalina">
+
+    <!-- WL Connectors -->
+    <Connector port="<%= @http_port %>" maxHttpHeaderSize="8192"
+               maxThreads="150" minSpareThreads="10" maxSpareThreads="40"
+               enableLookups="false" redirectPort="443" acceptCount="20"
+               connectionTimeout="20000" disableUploadTimeout="true" 
+               maxPostSize="4097152"
+               compression="on" compressableMimeType="text/html,text/xml,text/plain,application/javascript,application/json" />
+    
+
+    <Engine name="Catalina" defaultHost="localhost">
+
+      <!--
+      <Valve className="org.apache.catalina.valves.RequestDumperValve"/>
+      -->
+
+      <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+             resourceName="UserDatabase"/>
+
+      <Host name="localhost" appBase="webapps"
+       unpackWARs="false" autoDeploy="true"
+       xmlValidation="false" xmlNamespaceAware="false"
+       workDir="${instance.base}/work">
+
+        <!--
+        <Valve className="org.apache.catalina.authenticator.SingleSignOn" />
+        -->
+
+        <!--
+        <Valve className="org.apache.catalina.valves.AccessLogValve"
+                 directory="logs"  prefix="localhost_access_log." suffix=".txt"
+                 pattern="%{X-Forwarded-For}i %l %u %t &quot;%r&quot; %s %b" resolveHosts="false"/>
+        -->
+
+      </Host>
+
+    </Engine>
+
+  </Service>
+
+</Server>

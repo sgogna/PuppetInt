@@ -1,0 +1,9 @@
+---
+v12_cluster:
+  v12_app_build: 'v12-app-r7.7-build555'
+  v12_app_type: 'v12web-t2'
+  v12_databases: 'wl1-int-t2.default.INT'
+  v12_static_resources: 'simple.example.static_resources'
+  http_port: 8081
+  jmx_registry_port: 9001
+  jmx_server_port: 9101

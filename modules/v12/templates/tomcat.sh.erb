@@ -1,0 +1,88 @@
+#!/bin/sh
+
+export INST_NUM=<%= @inst_num %>
+export TOMCAT_HOME=<%= @dest_path %>/tomcat
+export CONFIG_HOME=<%= @dest_path %>/config
+export JAVA_HOME=<%= @dest_path %>/jdk
+export JRE_HOME=<%= @dest_path %>/jdk
+export INSTANCE_BASE=<%= @dest_path %>/work_dir
+export CATALINA_TMPDIR=$INSTANCE_BASE/temp
+export CATALINA_OUT_DIR=<%= @dest_path %>/logs
+
+# Get the directory of this shell script
+cd `dirname $0`
+SCRIPTDIR=`pwd`
+cd - > /dev/null
+
+export CATALINA_CONFIG=<%= @dest_path %>/server.xml
+export CATALINA_BASE=<%= @dest_path %>
+
+HOSTNAME=`hostname`
+
+# JMX properties
+export CATALINA_OPTS="${CATALINA_OPTS} -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=${HOSTNAME}"
+export CATALINA_OPTS="${CATALINA_OPTS} -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCDetails -Xloggc:<%= @dest_path %>/logs/gc.log -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=5M"
+
+export CATALINA_OPTS="${CATALINA_OPTS} <% @catalina_opts.each do |val| -%><%= val %> <% end -%>"
+#PROXY
+export CATALINA_OPTS="${CATALINA_OPTS} -Dhttp.nonProxyHosts=*.sabre.com|10.208.*|10.200.*|10.136.132.48|localhost -Dhttp.proxyPort=80 -Dhttps.proxyPort=80 -Dhttp.proxyHost=outbound-proxy.cert.sabre.com -Dhttps.proxyHost=outbound-proxy.cert.sabre.com -Dhttp.proxyUser=sg0920208 -Dhttp.proxyPassword=abcd1234 -Dhttps.proxyUser=sg0920208 -Dhttps.proxyPassword=abcd1234"
+
+
+# Check that the instance base exists
+if [ ! -d $INSTANCE_BASE ] ; then
+    echo "Creating tomcat instance directory $INSTANCE_BASE"
+    mkdir -p $INSTANCE_BASE/temp
+    mkdir -p $INSTANCE_BASE/work
+fi
+
+# Set up a few variables
+CATALINA_EXE=$TOMCAT_HOME/bin/catalina.sh
+STARTUP_EXE=$TOMCAT_HOME/bin/startup.sh
+SHUTDOWN_EXE=$TOMCAT_HOME/bin/shutdown.sh
+export JAVA_OPTS="-Dinstance.number=$INST_NUM -Dinstance.base=$INSTANCE_BASE -Dhostname=$HOSTNAME $JAVA_OPTS"
+
+# echo "Using CATALINA_OPTS:   $CATALINA_OPTS"
+echo "Using INSTANCE_BASE:   $INSTANCE_BASE"
+echo "Using CATALINA_CONFIG  $CATALINA_CONFIG"
+
+# Execute the command
+CATALINA_CMD=$1
+shift
+if  [ "$CATALINA_CMD" = "start-clean" ] ; then
+  rm -rf $INSTANCE_BASE/temp/*
+  rm -rf $INSTANCE_BASE/work/*
+  CATALINA_CMD="start"
+fi
+
+if [ "$CATALINA_CMD" = "stop-clean" ] ; then
+  WAIT_TIME=$1
+  shift
+  if [ "$WAIT_TIME" = "" ] ; then
+    WAIT_TIME=90
+  fi
+  $SCRIPTDIR/shutdown-clean.sh $WAIT_TIME -config $CATALINA_CONFIG
+elif [ "$CATALINA_CMD" = "kill" ] ; then
+  $SCRIPTDIR/shutdown-clean.sh 0 -config $CATALINA_CONFIG
+elif [ "$CATALINA_CMD" = "check" ] ; then
+  TOMCAT_PID=`ps -ef | grep "catalina.base" | grep "inst$INST_NUM" | awk '{print $2}'`
+  if [ "$TOMCAT_PID" = "" ]; then
+    echo "Tomcat instance $INST_NUM is not running"
+    exit 1
+  else
+    echo "Tomcat instance $INST_NUM is running. PID = $TOMCAT_PID"
+    exit 0
+  fi
+else
+  cd $CATALINA_OUT_DIR
+  $CATALINA_EXE $CATALINA_CMD $@ -config $CATALINA_CONFIG
+fi
+
+function gettomcatpid { 
+  TOMCAT_PID=`ps -ef | grep "catalina.base" | grep "inst$INST_NUM" | awk '{print $2}'`
+  if [ "$TOMCAT_PID" = "" ]; then
+    exit 1
+  else 
+	echo $
+  fi
+ 
+}

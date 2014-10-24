@@ -1,0 +1,221 @@
+# ConfigurationProperty:
+# key, value, scopeCode (D,E,A,S), environment, ipcc
+#
+# key1,value1,D,null,null
+# key2,value2,A,null,null
+# key3,value3,S,null,Y4Y4
+
+# adapter.gds.configuration.xml
+# bean id="gds.sabre.configuration.booking" 
+gds.sabre.booking.checkForPriceDiscrepancy,false,D,null,null
+gds.sabre.booking.runPosCommand,true,D,null,null
+gds.sabre.booking.useOriginCountryCurrency,true,D,null,null
+gds.sabre.booking.asr.close.shortened.useOptimizedQuery,true,D,null,null
+gds.sabre.booking.asr.close.shortened.optimizedQueryQualifier,N,D,null,null
+ 
+# bean id="gds.sabre.configuration.command.printer" 
+gds.sabre.command.assignTicketPrinter.ticketStock,2A,D,null,null
+gds.sabre.command.assignTicketPrinter.useBookingPseudoCity,true,D,null,null
+gds.sabre.lniata.number,7792E2,D,null,null
+gds.sabre.station.number,00000221,D,null,null
+gds.sabre.hardcopy.printer,7792E2,D,null,null
+ 
+# bean id="gds.sabre.configuration.gds"
+gds.sabre.command.osi.add.airline,PG,D,null,null
+gds.sabre.command.pos,ZDH,D,null,null
+gds.sabre.command.useBookingPCC,true,D,null,null
+gds.sabre.command.purchaseCityCode,ZDH,D,null,null
+gds.sabre.command.ssr.passport.displayGenderInCommand,false,D,null,null
+gds.sabre.command.ssr.passport.useRequestedPaxTypeIfInfant,true,D,null,null
+gds.sabre.command.ssr.meal.requestPerSegment,true,D,null,null
+gds.sabre.command.ssr.infant.useDateOfBirth,true,D,null,null
+gds.sabre.command.book.bookRequestCreator.skipBookingClassSearchIfAlreadySet,true,D,null,null
+gds.sabre.command.seatNumber.normalize,true,D,null,null
+### Always not redefined ...
+#gds.sabre.command.ssr.passport.carryingInfantIndicator,null,D,null,null
+###
+gds.sabre.queue.instructionCode,41,D,null,null
+gds.sabre.ff.adddetails,false,D,null,null
+gds.sabre.ssr.fillBookingWithFeatures,true,D,null,null
+gds.sabre.travelInfo.formatContactNumber,false,D,null,null
+gds.sabre.ws.cdi.target.environment,CERTIFICATION,D,null,null
+gds.sabre.ws.maxRemarkLength,70,D,null,null
+gds.sabre.command.book.bookRequestCreator.frequentFlyerBookingClassOverride,X,D,null,null
+gds.sabre.command.ssr.infant.inftSsrFormat,4INFT/%s/%s/%s-%s,D,null,null
+gds.sabre.command.shopping.brandedIntellsellRequestType,BRDFARES,D,null,null
+gds.sabre.command.mm.airlineBrandingRequest.carrierCode,F7,D,null,null
+
+# bean id="gds.sabre.configuration.travelbank" 
+gds.sabre.command.travelBank.updatePassword,true,D,null,null
+ 
+# bean id="gds.sabre.configuration.aer" 
+gds.sabre.command.aer.checkBucketTag,true,D,null,null
+ 
+# bean id="gds.sabre.configuration.payment" 
+psp.sabre.paymentRequestCreator.merchantId,PG,D,null,null
+psp.sabre.paymentRequestCreator.merchantName,Fly Baboo Airways,D,null,null
+ 
+# bean id="gds.sabre.configuration.fare" 
+gds.sabre.daysInFuture,331,D,null,null
+gds.sabre.fareRule.retries,3,D,null,null
+search.availability.filterNonEticketableFlights,false,D,null,null
+gds.sabre.retrieveAdditionalFlightInfo,false,D,null,null
+gds.sabre.forceRetrieveAdditionalFlightInfo,false,D,null,null
+gds.sabre.flight.caching.sendVendorPrefs,true,D,null,null
+gds.sabre.command.shopping.calendar.numoneways,20,D,null,null
+gds.sabre.command.shopping.branded.numoneways,20,D,null,null
+gds.sabre.command.shopping.branded.maxnumoneways,100,D,null,null
+gds.sabre.command.shopping.calendar.numdays,3,D,null,null
+gds.sabre.command.fare.type,ALL,D,null,null
+gds.sabre.flight.caching.date.format,%1$4d-%2$02d-%3$02dT00:00:00,D,null,null
+gds.sabre.timeZone,Asia/Dubai,D,null,null
+ 
+# bean id="gds.sabre.configuration.https" 
+gds.sabre.https.policy.connectionType,KEEP_ALIVE,D,null,null
+gds.sabre.https.policy.allowChunking,false,D,null,null
+ 
+# bean id="gds.sabre.configuration.pricing" 
+gds.sabre.pricing.indicatePointOfSale,true,D,null,null
+gds.sabre.pricing.retainPricing,false,D,null,null
+gds.sabre.command.price.requestCreator.alwaysUseCNNforChildPassengerType,true,D,null,null
+gds.sabre.command.price.requestCreator.skipSegmentEvaluation,true,D,null,null
+gds.sabre.command.price.requestCreator.redemptionTicketDesignator,TBFFP,D,null,null
+gds.sabre.command.pricing.forceIgnoreOnEntry,true,D,null,null
+## Always not redefined ... 
+#gds.sabre.command.price.requestCreator.purchaseCityCode,_MISSING_VALUE_,D,null,null
+##
+
+# bean id="gds.sabre.configuration.sessionFactory" 
+sabre.session.CPAId,PG,D,null,null
+sabre.session.username,5128,D,null,null
+sabre.session.password,ssweb9pg,D,null,null
+sabre.session.organization,PG,D,null,null
+sabre.session.domain,PG,D,null,null
+ 
+# bean id="gds.sabre.configuration.ticketing" 
+gds.sabre.ticket.dutyCodeRequired,false,D,null,null
+gds.sabre.ticket.addFrequentFlyerAuthCodeIntoTourCode,true,D,null,null
+ 
+# bean id="gds.sabre.configuration.ws.connection.pool" 
+gds.sabre.ws.allowUnpooledConnections,false,D,null,null
+gds.sabre.ws.pool.maxActive,10,D,null,null
+gds.sabre.ws.pool.maxIdle,-1,D,null,null
+gds.sabre.ws.pool.maxWait,4000,D,null,null
+gds.sabre.ws.pool.timeBetweenEvictionRunsMillis,120000,D,null,null
+gds.sabre.ws.pool.minEvictableIdleTimeMillis,300000,D,null,null
+gds.sabre.ws.pool.whenExhaustedAction,1,D,null,null
+
+# bean id="gds.sabre.configuration.profiles" 
+gds.sabre.ws.ppp.target.environment,Test,D,null,null
+gds.sabre.ws.ppp.useFullMiddleName,true,D,null,null
+gds.sabre.ws.ppp.client.code,AS,D,null,null
+gds.sabre.ws.ppp.client.context.code,SSW,D,null,null
+gds.sabre.ws.ppp.mapHasChildren,true,D,null,null
+gds.sabre.ws.ppp.mobilePhoneTypeCode,CEL,D,null,null
+gds.sabre.command.defaultProfileSubType,WEB,D,null,null
+gds.sabre.command.profileDuplicateCheck,true,D,null,null
+
+# bean id="gds.sabre.configuration.ws" 
+gds.sabre.ws.receivedFrom,SSW,D,null,null
+gds.sabre.ws.endpoint,https://sws3-crt.internal.cert.sabre.com,D,null,null
+gds.sabre.receiveTimeoutInMillis,60000,D,null,null
+gds.sabre.ws.pcc,UWS,D,null,null
+
+# bean id="gds.sabre.configuration.mts" 
+gds.sabre.command.mts.pos,94Q7,D,null,null
+gds.sabre.command.mts.posGroup,US,D,null,null
+gds.sabre.command.mts.channel,SSW,D,null,null
+gds.sabre.command.mts.shoppingPath,Air,D,null,null
+gds.sabre.command.mts.sessionIdPrefix,SSW_SESSION_ID_,D,null,null
+
+# shopping.configuration.xml
+# bean id="shopping.configuration.shoppingEngineConfiguration" 
+shoppingEngine.defaultPseudoCityCode,UWS,D,null,null
+shoppingEngine.separateCallforAltCities,true,D,null,null
+core.shoppingStrategy.name,calendarStrategy,D,null,null
+shoppingEngine.includeUnavailable,false,D,null,null
+  
+# bean id="pricing.configuration.pricingConfiguration" 
+core.main.pricing.discountSplitter.splitProportionally,true,D,null,null
+core.main.webusage.checking,true,D,null,null
+core.main.webusage.maxBatchSize,20000,D,null,null
+core.main.webusage.minutesBlocked,1440,D,null,null
+core.main.webusage.updating,true,D,null,null
+core.main.pricing.discountSplitter.splitPaxTypeDiscounts,true,D,null,null
+ 
+# bean id="shoppingApi.configuration.shoppingApiConfiguration" 
+shoppingApi.checkDuplicateShoppingBasketHash,true,D,null,null
+shoppingApi.checkShoppingBasketForErrors,false,D,null,null
+shoppingApi.multipleFopCancellationConfigured,true,D,null,null 
+
+# pnr queues
+shoppingEngine.queue.booking.success,111,D,null,null
+shoppingEngine.queue.email.failure,112,D,null,null
+shoppingEngine.queue.booking.failed.ccauthorisation,113,D,null,null
+shoppingEngine.queue.booking.failed.issueticket,114,D,null,null
+shoppingEngine.queue.booking.failed.accountCreation,115,D,null,null
+shoppingEngine.queue.booking.failed.accertify,116,D,null,null
+shoppingEngine.queue.booking.failed.3dsecureEnrollmentVerification,117,D,null,null
+
+# Need to be removed from here after code refactoring
+component.flc.brand.columns.hidden,"",D,null,null
+
+# Sat configuration - TODO: Need to be replaced by configuration object
+sat.passenger.type.adult,ADT,D,null,null
+sat.passenger.type.child,CHD,D,null,null
+sat.passenger.type.infant,INF,D,null,null
+
+sat.alternativeLandingPage,AIR_SELECT_PAGE,D,null,null
+sat.languages,"er_AE,be_BY,de,de_DE,el_GR,en,en_GB,es_ES,es_LA,fr_CA,fr,fr_FR,he_IL,it,it_IT,ja_JP,kh_KH,ko_KR,mt_MT,nl_NL,pt_BR,pt_PT,ru_RU,sv_SE,th_TH,tr_TR,vt_VT,zh_CN,zh_HKn,de,fr,it,pl,nl",D,null,null
+sat.languages.default,en,D,null,null
+sat.mts.AncillaryServices.InsuranceIncludeInfantsInTripCost,false,D,null,null
+
+sat.pricing.repriceAfterSelectFlights.enabled,false,D,null,null
+sat.pricing.repriceBeforePaymentPage.enabled,true,D,null,null
+sat.pricing.fallback.enabled,true,D,null,null
+
+component.lang.currencySelection.enabled,true,D,null,null
+component.lang.currencies,"CHF,EUR,CZK,GBP,NOK,DKK,SEK,USD",D,null,null
+component.lang.defaultCurrency,CHF,D,null,null
+
+component.fsc.maxTotalSeatedPassengers,7,D,null,null
+
+#misc ticketing config
+ticketing.ticketTimeLimit,3:00,D,null,null
+
+#shopping engine
+searchEngine.search.minimumConnectionTimeMinutes,30,D,null,null
+searchEngine.search.minimumDepartureTimeMinutes,240,D,null,null
+
+## psp
+# true if 3d secure is enabled
+psp.3ds.enabled,true,D,null,null
+# comma delimited list of credit card types that participate in 3d secure
+psp.3ds.creditCardTypes,"BA, IK",D,null,null
+# when 3d secure is disabled, allow participating card types to proceed.
+psp.3ds.whenDisabledAllowParticipating,true,D,null,null
+# require cards to be 3dsecure enrolled
+psp.3ds.enrolmentRequired,false,D,null,null
+# failure behaviour when cards are not 3dsecure enrolled
+psp.3ds.enrolmentRequiredFailureType,hard,D,null,null
+psp.3ds.failedConnectionFailureType,hard,D,null,null
+# require credit card to have liability protection
+psp.3ds.liabilityProtectionRequired,false,D,null,null
+psp.3ds.verificationInsufficientFailureType,hard,D,null,null
+# failure behaviour when authentication fails
+psp.3ds.authenticationFailureType,hard,D,null,null
+# failure behaviour when connecting to 3dsecure fails
+psp.3ds.connectionFailureType,soft,D,null,null
+# failure behaviour when 'insufficient authentication' response is received from 3dscure
+psp.3ds.authenticationInsufficientFailureType,hard,D,null,null
+
+## psp eurocommerce
+psp.eurocommerce.ws.account,FlyBaboo,D,null,null
+psp.eurocommerce.ws.password,X2cTv2@f$vD!,D,null,null
+psp.eurocommerce.ws.locationCode,WEB-FlyBaboo,D,null,null
+psp.eurocommerce.ws.apiVersion,1.0,D,null,null
+psp.eurocommerce.redirecturl,https://w1l-int.sabresonicweb.com/SSW2010/PGPG/webqtrip.html?_eventId=submitPaRes&execution=,D,null,null
+
+## MTS
+mts.insuranceDeclinedRemark.vendorName,Mondial Assistance,D,null,null
+mts.insuranceDeclinedRemark.vendorPhone,PHNUM,D,null,null

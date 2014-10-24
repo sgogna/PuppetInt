@@ -1,0 +1,4 @@
+#PropertyName, #PropertyValue
+MaintenanceMode,false
+SearchLockMode,false
+WorkingMode,true

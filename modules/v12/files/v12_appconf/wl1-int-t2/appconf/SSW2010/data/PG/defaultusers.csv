@@ -1,0 +1,3 @@
+# title, firstname, lastname, username, password, accountNonExpired, accountNonLocked, credentialsNonExperired, enabled, preferredLanguage, email, emailtype, phoneNumber, phonenumbertype, permissiongroup
+MR,Admin,Admin,EB2Admin,eb2admin,true,true,true,true,EN,support@eb2.com,WORK, 77777777, WORK, EB2ADMIN
+MR,Admin,Admin,F7Admin,f7admin,true,true,true,true,EN,support@eb2.com,WORK,00000000,WORK,DEAL

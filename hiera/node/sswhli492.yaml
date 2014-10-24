@@ -1,0 +1,9 @@
+---
+v12_instances:
+  inst1:
+    inst_num: 1
+    v12_cluster: 'wl1-int-t2'
+    ensure: 'stopped'
+
+ssw_facts::env_type: 'int'
+ssw_facts::tier: '3'

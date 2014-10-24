@@ -1,0 +1,294 @@
+10
+
+dir
+0
+http://svn.dev.sabre.com/svn/apdssweb2/branches/ssw_r2010.2011.03.00/airline-core/SSW2010/server/core/src/main/resources/classpath/SSW2010/data/MN
+http://svn.dev.sabre.com/svn/apdssweb2
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7d53d659-ed0f-0410-8c13-ca475c55a407
+
+accounttype.csv
+file
+
+
+
+add
+
+addresstype.csv
+file
+
+
+
+add
+
+airlines.csv
+file
+
+
+
+add
+
+airportpairs.csv
+file
+
+
+
+add
+
+airports.csv
+file
+
+
+
+add
+
+bookingclasscategories.csv
+file
+
+
+
+add
+
+bookingclasses.csv
+file
+
+
+
+add
+
+bookingclassmappings.csv
+file
+
+
+
+add
+
+cabinclasses.csv
+file
+
+
+
+add
+
+cities.csv
+file
+
+
+
+add
+
+continents.csv
+file
+
+
+
+add
+
+countries.csv
+file
+
+
+
+add
+
+creditcardtypes.csv
+file
+
+
+
+add
+
+defaultusers.csv
+file
+
+
+
+add
+
+dummyfares.csv
+file
+
+
+
+add
+
+emailtype.csv
+file
+
+
+
+add
+
+industrytype.csv
+file
+
+
+
+add
+
+initializer
+dir
+
+
+
+add
+
+locationAlias.csv
+file
+
+
+
+add
+
+meals.csv
+file
+
+
+
+add
+
+passengertypes.csv
+file
+
+
+
+add
+
+permission.csv
+file
+
+
+
+add
+
+permissiongroup.csv
+file
+
+
+
+add
+
+phonenumbertype.csv
+file
+
+
+
+add
+
+promotions.csv
+file
+
+
+
+add
+
+resourcehierarchytypes.csv
+file
+
+
+
+add
+
+routes.csv
+file
+
+
+
+add
+
+seats.csv
+file
+
+
+
+add
+
+ssw2010_configurationproperties.csv
+file
+
+
+
+add
+
+ssw2010_pseudocities.csv
+file
+
+
+
+add
+
+ssw2010_storefrontroutes.csv
+file
+
+
+
+add
+
+ssw2010_storefronts.csv
+file
+
+
+
+add
+
+surfacetransports.csv
+file
+
+
+
+add
+
+systemproperty.csv
+file
+
+
+
+add
+
+titles.csv
+file
+
+
+
+add
+
+translatedlocales.csv
+file
+
+
+
+add
+
+translations
+dir
+
+
+
+add
+
+userdefinedregions.csv
+file
+
+
+
+add
+

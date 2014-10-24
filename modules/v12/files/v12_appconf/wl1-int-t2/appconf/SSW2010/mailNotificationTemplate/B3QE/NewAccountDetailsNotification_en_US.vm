@@ -1,0 +1,34 @@
+Profile Created
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Profile Created</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+body, p { font: 10pt Verdana; }
+</style>
+</head>
+<body>
+Dear $User.firstName $User.lastName,<br>
+
+Congratulations. Your profile has been created successfully. <br>
+Your member ID is $User.username. Please take a note of this number. Use it to access your account  on our website. <br>
+To start earning miles on Vietnam Airlines and SkyTeam Airlines eligible flights, please quote your member  number $User.username  whenever you make reservations, purchase tickets, as well as  present the card each time you check-in at the airport or using GLP partners services. <br>
+Your Silver card will be sent to your registered address 3 to 6 weeks after the first eligible flight has been taken and miles have been credited to your account. <br>
+
+We look forward to welcoming you on our flights. <br>
+Yours sincerely, <br>
+
+Golden Lotus Plus  Vietnam Airlines<br>
+200 Nguyen Son Str, Long Bien Dist, Ha Noi, Viet Nam. <br>
+Website: http://www.vietnamairlines.com<br>
+Email: glp@vietnamairlines.com<br>
+Tel: +844 38 730314 (office hours) <br>
+Fax: +844 38 273003<br>
+For Platinum and Gold members: <br>
+Tel: +844 38 738738 (office hours) <br>
+Email: premium.glp@vietnamairlines.com <br>
+
+
+</body>
+</html>

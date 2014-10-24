@@ -1,0 +1,42 @@
+---
+databases:
+  EY:
+    prefix: "ey"
+    connection: "jdbc:oracle:thin:@ (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = sswhli491-vip)(PORT = 1527)) (ADDRESS = (PROTOCOL = TCP)(HOST = sswhli492-vip)(PORT = 1527)) (LOAD_BALANCE = yes) (FAILOVER=on)  (CONNECT_DATA =  (SERVER = SHARED)  (SERVICE_NAME = SSWBEI1)  (FAILOVER_MODE =  (TYPE = SESSION)  (METHOD = BASIC)(RETRIES = 180)(DELAY = 5) )  )  )"
+    user: "ssw2010_ey_1_user"
+    password: "SSW2010_EY_1_USER"
+    release: "R7.7"
+    version: "158"
+    frontend_version: "42"
+  VA:
+    prefix: "va"
+    connection: "jdbc:oracle:thin:@ (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = sswhli491-vip)(PORT = 1527)) (ADDRESS = (PROTOCOL = TCP)(HOST = sswhli492-vip)(PORT = 1527)) (LOAD_BALANCE = yes) (FAILOVER=on)  (CONNECT_DATA =  (SERVER = SHARED)  (SERVICE_NAME = SSWBEI1)  (FAILOVER_MODE =  (TYPE = SESSION)  (METHOD = BASIC)(RETRIES = 180)(DELAY = 5) )  )  )"
+    user: "ssw2010_va_1_user"
+    password: "SSW2010_VA_1_USER"
+    release: "R7.7"
+    version: "158"
+    frontend: "42"
+
+
+db_patch_executor:
+  mode:                               "dual"
+  source_env1:                        "STAN760"
+  target_env1:                        "STAN760"
+  target_env1_description:            "Production - release 7.6.0"
+  target_env1_type:                   "DISABLED"
+  drafts_to_migrate_env1:             0
+  first_params:                       "-o WHITELABEL"
+  first_arlines:                      "EY"
+  source_env2:                        "REL760"
+  target_env2:                        "REL760"
+  target_env2_description:            "Staging - release 7.6.0"
+  target_env2_type:                   "DISABLED"
+  drafts_to_migrate_env2:             0
+  second_params:                      "-o WHITELABEL"
+  second_arlines:                     "VA"
+  past_prod_versions_to_migrate:      0
+  latest_draft_versions_to_migrate:  0
+  overrides_data_path:                "../../SSW2010-web-int/webapps/SSW2010_DATA_DIR/userData"
+  generated_script_file_path:         "classpath:copyscripts"
+  generated_script_file_name:         "copyuserdata_{0}.sh"
+  obsolete_environments_excluded:     "STAN770"

@@ -1,0 +1,7 @@
+# User Defined Regions : Groups of locations that don't map to our existing Location class hierarchy,
+# locationCode, countryCode/countryCode/...
+# ================================,
+# IATA Regions,
+# ================================,
+FLORIDA,FLL/RSW/JAX/MCO/SRQ/TPA/PBI
+# ================================,

@@ -1,0 +1,34 @@
+1. gateway_mondialusa_2014
+2. monial-intca
+3. servicesamex2014
+4. servicesamex2014intermediate
+5. servicesamex2014root
+6. servicesamexintermediate
+7. servicesamexrootcert
+8. uatgateway_mondial_2014
+9. entrustclientca
+10. entrustglobalclientca
+11. entrustgsslca 
+12. equifaxsecureebusiness2
+13. intermediary-ca-2011
+14. intermediary-ca-2013
+15. rootca-2011
+16. thawintermediateca
+17. thawtepersonalbasicca
+18. thawtepersonalpremiumca
+19. ttelescglobalrootcla
+20. verisignclass3evsgcca
+21. verisignclass3extended
+22. verisignrootca
+
+
+
+
+
+
+
+
+
+
+
+

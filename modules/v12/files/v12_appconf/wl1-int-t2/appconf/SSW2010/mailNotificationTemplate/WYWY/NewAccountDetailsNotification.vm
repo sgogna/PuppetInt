@@ -1,0 +1,33 @@
+Profile Created
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Profile Created</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+body, p { font: 10pt Verdana; }
+</style>
+</head>
+<body>
+Welcome $User.firstName $User.lastName,
+<br><br>
+Your new Oman Air Guest Profile has been created.
+<br><br>
+The following is your new Oman Air ID. We recommend you keep this email or make note of your Oman Air ID as it is required to login to your Guest Profile.  You will also receive a separate email with your password for your new Oman Air ID.
+<br><br>
+Oman Air ID: $User.username
+<br><br>
+To login to your profile, sign in here
+$loginUrl
+<br><br>
+Your profile can be used to: <br>
+* Store your information and simplify the booking process. <br>
+* Manage your reservations online <br>
+* Manage your communication preferences. <br>
+<br><br>
+At Oman Air we are committed to respecting your privacy. We suggest you review our Privacy Policy which is available on omanair.com at your earliest convenience.
+<br><br>
+* This is an automated message system. Please do not respond. If you have any concerns about this message or if you have received this message in error, please contact $contactPhone.
+
+</body>
+</html>

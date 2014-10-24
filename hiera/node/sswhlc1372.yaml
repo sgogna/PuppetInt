@@ -1,0 +1,17 @@
+---
+s2_instances:
+  inst1:
+    inst_num: 1
+    s2_cluster: 's2dr1-cert'
+    ensure: 'running'
+  inst4:
+    inst_num: 4
+    s2_cluster: 's2dr2-cert'
+    ensure: 'running'
+  inst6:
+    inst_num: 6
+    s2_cluster: 's2dr3-cert'
+    ensure: 'running'
+
+ssw_facts::env_type: 'cert'
+ssw_facts::tier: '2'

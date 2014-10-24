@@ -1,0 +1,299 @@
+100,Fokker 100,150,150,150
+141,British Aerospace 146-100 Pax,150,150,150
+142,British Aerospace 146-200 Pax,150,150,150
+143,British Aerospace 146-300 Pax,150,150,150
+146,British Aerospace 146 Passenger,80,80,80
+14F,British Aerospace 146 Freighter (-200/300QT & QC),150,150,150
+310,Airbus A310 all pax models,150,150,150
+312,Airbus A310-200 Pax,150,150,150
+313,Airbus A310-300 Pax,150,150,150
+318,Airbus A318,150,150,150
+319,Airbus Industrie A319,126,126,126
+320,Airbus Industrie A320,149,149,149
+321,Airbus A321-100/200,149,149,149
+32S,Airbus A318/319/320/321,150,150,150
+330,Airbus A330 all models,150,150,150
+332,Airbus A330-200,150,150,150
+333,Airbus Industrie A330-300 Passenger,150,150,150
+340,Airbus A340 all models,150,150,150
+342,Airbus A340-200,286,286,286
+343,Airbus A340-300,286,286,286
+345,Airbus A340-500,150,150,150
+346,Airbus A340-600,150,150,150
+703,Boeing 707-300 pax,150,150,150
+707,Boeing 707/720 all pax models,150,150,150
+70F,Boeing 707 Freighter,150,150,150
+70M,Boeing 707 Combi,150,150,150
+717,Boeing 717,150,150,150
+721,Boeing 727-100,150,150,150
+722,Boeing 727-200,150,150,150
+727,Boeing 727 all pax models,150,150,150
+72A,Boeing 727 Advanced pax,150,150,150
+72F,Boeing 727 Freighter (-100/200),150,150,150
+72M,Boeing 727 Combi,150,150,150
+72S,Boeing 727-200 Advanced pax,150,150,150
+731,Boeing 737-100,150,150,150
+732,Boeing 737-200,150,150,150
+733,Boeing 737-300,147,147,147
+734,Boeing 737-400,147,147,147
+735,Boeing 737-500,150,150,150
+736,Boeing 737-600,150,150,150
+737,Boeing 737 All pax models,147,147,147
+738,Boeing 737-800,150,150,150
+739,Boeing 737-900,150,150,150
+73A,Boeing 737 Advanced pax,150,150,150
+73F,Boeing 737 All freighter models,150,150,150
+73G,Boeing 737-700,150,150,150
+73M,Boeing 737-200 Combi,150,150,150
+73S,Boeing 737-200 Advanced pax,150,150,150
+73X,Boeing 737-200 Freighter,150,150,150
+73Y,Boeing 737-300 Freighter,150,150,150
+741,Boeing 747-100,150,150,150
+742,Boeing 747-200,150,150,150
+743,Boeing 747-300,150,150,150
+744,Boeing 747-400,409,409,409
+747,Boeing 747 All pax models,425,425,425
+74C,Boeing 747-200 Combi,150,150,150
+74D,Boeing 747-300 Combi,150,150,150
+74E,Boeing 747-400 Combi,150,150,150
+74F,Boeing 747 All freighter models,150,150,150
+74L,Boeing 747SP,150,150,150
+74M,Boeing 747 All combi models,150,150,150
+74R,Boeing 747SR,150,150,150
+74X,Boeing 747-100/200/SR Freighter,150,150,150
+74Y,Boeing 747-400 Freighter,150,150,150
+752,Boeing 757-200,170,170,170
+753,Boeing 757-300,150,150,150
+757,Boeing 757 All pax models,198,198,198
+75F,Boeing 757 Freighter,150,150,150
+762,Boeing 767-200,150,150,150
+763,Boeing 767-300,150,150,150
+764,Boeing 767-400,150,150,150
+767,Boeing 767 All pax models,252,252,252
+76F,Boeing 767 Freighter,150,150,150
+772,Boeing 777-200,225,225,225
+773,Boeing 777-300,150,150,150
+777,Boeing 777 All pax models,300,300,300
+A40,Antonov AN140,150,150,150
+A4F,Antonov AN124 Ruslan,150,150,150
+AB3,Airbus A300 Pax,150,150,150
+AB4,Airbus A300B2/B4/C4 Pax,150,150,150
+AB6,Airbus A300-600 Pax,150,150,150
+ABF,Airbus A300C4/F47-600 Freighter,150,150,150
+ACD,Gulfstream/Rockwell (Aero) Commander/Turbo Commander,150,150,150
+ACP,Gulftream/Rockwell (Aero) Commander,150,150,150
+ACT,Gulfstream/Rockwell (Aero) Turbo Commander,150,150,150
+AN4,Antonov AN24,150,150,150
+AN6,Antonov AN26,150,150,150
+AN7,Antonov AN72/74,150,150,150
+ANF,Antonov An12,150,150,150
+AR1,Avro RJ100 Avroliner,150,150,150
+AR7,Avro RJ70 Avroliner,150,150,150
+AR8,Avro RJ85 Avroliner,150,150,150
+ARJ,Avro RJ Avroliner,150,150,150
+AT3,Aerospatiale/Alenia ATR 42-300,150,150,150
+AT4,Aerospatiale/Alenia ATR 42,150,150,150
+AT5,Aerospatiale/Alenia ATR 42-500,150,150,150
+AT7,Aerospatiale/Alenia ATR 72,150,150,150
+ATP,British Aerospace ATP,30,30,30
+ATR,Aerospatiale/Alenia ATR 42/72,150,150,150
+B11,British Aerospace (BAC) One Eleven / RomBAC One Eleven,150,150,150
+B12,British Aerospace (BAC) One Eleven 200,150,150,150
+B13,British Aerospace (BAC) One Eleven 300,150,150,150
+B14,British Aerospace (BAC) One Eleven 400/475,150,150,150
+B15,British Aerospace (BAC) One Eleven 500 / RomBAC One Eleven,150,150,150
+B72,Boeing 720B Pax,150,150,150
+BE1,Beechcraft 1900/1900C/1900D,150,150,150
+BE2,Beechcraft twin piston engines,150,150,150
+BEC,Beechcraft light aircraft,150,150,150
+BEH,Beechcraft 1900D,150,150,150
+BEP,Beechcraft ligth aircraft - singel engine,150,150,150
+BES,Beechcraft 1900/1900C,150,150,150
+BET,Beechcraft light aircraft - twin turboprop engine,150,150,150
+BH2,Bell Helicopters,150,150,150
+BNI,Pilatus Britten-Norman BN-2T Islander,150,150,150
+BNT,Pilatus Britten-Norman BN-2A Mk III Islander,150,150,150
+CCJ,Canadair Challenger,150,150,150
+CD2,Nomad N22B/N24A,150,150,150
+CL4,Canadair CL-44,150,150,150
+CN1,Cessna light aircraft - single piston engine,150,150,150
+CN2,Cessna light aircraft - twin piston engine,150,150,150
+CNA,Cessna light aircraft,150,150,150
+CNC,Cessna light aircraft - single turboprop engine,150,150,150
+CNJ,Cessna Citation,150,150,150
+CNT,Cessna light aircraft - twin turboprop engine,150,150,150
+CR1,Canadair Regional Jet 100,150,150,150
+CR2,Canadair Regional Jet 200,150,150,150
+CR7,Canadair Regional Jet 700,150,150,150
+CRJ,Canadair Regional Jet,150,150,150
+CRV,Aerospatiale (Sud Aviation) Se.210 Caravelle,150,150,150
+CS2,CASA/IPTN 212 Aviocar,150,150,150
+CS5,CASA/IPTN CN-235,150,150,150
+CV4,Convair CV-440 Metropolitan Pax,150,150,150
+CV5,Convair CV-580 Pax,150,150,150
+CV6,Convair CV-600/640 Pax,150,150,150
+CVF,Convair CV-440/580/600/640 Freighter,150,150,150
+CVR,Convair CV-440/580/600/640 Pax,150,150,150
+CVX,Convair CV-440 Freighter,150,150,150
+CVY,Convair CV-580/600/640 Freighter,150,150,150
+CWC,Curtis C-46 Commando,150,150,150
+D10,Douglas DC-10 Pax,150,150,150
+D11,Douglas DC-10-10/15 Pax,150,150,150
+D1C,Douglas DC-10-30/40 Pax,150,150,150
+D1F,Douglas DC-10 Freighter,150,150,150
+D1M,Douglas DC-10 Combi,150,150,150
+D28,Fairchild Dornier Do.228,150,150,150
+D38,Fairchild Dornier Do.328,150,150,150
+D3F,Douglas DC-3 Freighter,150,150,150
+D6F,Douglas DC-6A/B/C Freighter,150,150,150
+D85,Douglas DC-8-50 Pax,150,150,150
+D86,Douglas DC-8-61 Pax,150,150,150
+D87,Douglas DC-8-71 Pax,150,150,150
+D8A,Douglas DC-8-63 Pax,150,150,150
+D8B,Douglas DC-8-73 Pax,150,150,150
+D8F,Douglas DC-8 Freighter,150,150,150
+D8L,Douglas DC-8-62 Pax,150,150,150
+D8M,Douglas DC-8 Combi,150,150,150
+D8Q,Douglas DC-8-72 Pax,150,150,150
+D8X,Douglas DC-8-50/61/62/63 Freighter,150,150,150
+D8Y,Douglas DC-8-71/72/78 Freighter,150,150,150
+D91,Douglas DC-9-10 Pax,150,150,150
+D92,Douglas DC-9-20 Pax,150,150,150
+D93,Douglas DC-9-30 Pax,150,150,150
+D94,Douglas DC-9-40 Pax,150,150,150
+D95,Douglas DC-9-50,150,150,150
+D9F,Douglas DC-9 Freighter,150,150,150
+D9S,Douglas DC-9-30/40/50 Pax,150,150,150
+DC3,Douglas DC-3 pax,150,150,150
+DC6,Douglas DC6A/B Pax,150,150,150
+DC8,Douglas DC-8 Pax,150,150,150
+DC9,Douglas DC-9 Pax,150,150,150
+DF2,Dassault (Breguet Mystere) Falcon 10/20/100/200,150,150,150
+DF3,Dassault (Breguet Mystere) Falcon 50/900,150,150,150
+DFL,Dassault (Breguet Mystere) Falcon,150,150,150
+DH1,De Havilland Canada DHC-8 Dash 8-200,150,150,150
+DH3,De Havilland Canada DHC-8 Dash 8-300,150,150,150
+DH4,De Havilland Canada DHC-8 Dash 8-400,150,150,150
+DH7,De Havilland Canada DHC-7 Dash 7,150,150,150
+DH8,De Havilland Canada DHC-8 Dash 8,40,40,40
+DHB,De Havilland Canada DHC-2 Beaver/Turbo Beaver,150,150,150
+DHC,De Havilland Canada DHC-4 Caribou,150,150,150
+DHD,De Havilland DH.104 Dove,150,150,150
+DHH,De Havilland DH.114 Heron,150,150,150
+DHL,De Havilland Canada DHC-3 Turbo Otter,150,150,150
+DHO,De Havilland Canada DHC-3 Otter / Turbo Otter,150,150,150
+DHP,De Havilland canada DHC-2 Beaver,150,150,150
+DHR,De Havilland Canada DHC-2 Beaver,150,150,150
+DHS,De Havilland Canada DHC-3 Otter,150,150,150
+DHT,De Havilland Canada DHC-6 Twin Otter,150,150,150
+E70,Embraer 170,150,150,150
+E90,Embraer 190,150,150,150
+EM2,Embraer EMB.120 Brasilia,150,150,150
+EMB,Embraer EMB.110 Bandeirnate,150,150,150
+ER1,Embraer,20,20,20
+ER3,Embraer RJ135,150,150,150
+ER4,Embraer RJ145 Amazon,40,40,40
+ERD,Embraer RJ135/145,150,150,150
+ERJ,Embraer RJ135/145,150,150,150
+EQV,Aircraft Varies,0,0,0
+F21,Fokker F.28 Fellowship 1000,150,150,150
+F22,Fokker F.28 Fellowship 2000,150,150,150
+F23,Fokker F.28 Fellowship 3000,150,150,150
+F24,Fokker F.28 Fellowship 4000,150,150,150
+F27,Fokker F.27 Friendship / Fairchild F.27,150,150,150
+F28,Fokker F.28 Fellowship,150,150,150
+F50,Fokker 50,150,150,150
+F70,Fokker 70,150,150,150
+FA7,Fairchild Dornier 728JET,150,150,150
+FK7,Fairchild FH.227,150,150,150
+FRJ,Fairchild Dornier 328JET,150,150,150
+GRG,Grumman G.21 Goose,150,150,150
+GRJ,Gulfstream Aerospace G-1159 Gulftstream II/III/IV,150,150,150
+GRM,Grumman G.73 Turbo Mallard,150,150,150
+GRS,Gulfstream Aerospace G-159 Gulfstream I,150,150,150
+H25,British Aerospace (Hawker Siddley) HS.125,150,150,150
+HEC,Helio Courier,150,150,150
+HOV,Hovercraft,150,150,150
+HPH,Handley Page Herald,150,150,150
+HS7,Hawker Siddley HS.748,150,150,150
+I14,Ilyushin IL114,150,150,150
+IAT,Aircraft,150,150,150
+ICE,Train - Inter-City Express,150,150,150
+IL6,Ilyushin IL62,150,150,150
+IL7,Ilyushin IL76,150,150,150
+IL8,Ilyushin IL18,150,150,150
+IL9,Ilyushin IL96-300,150,150,150
+ILW,Ilyushin IL86,150,150,150
+J31,British Aerospace Jetstream 31,150,150,150
+J41,British Aerospace Jetstream 41,150,150,150
+JU5,Junkers Ju52/3M,150,150,150
+L10,Lockheed L-1011 Tristar Pax,150,150,150
+L11,Lockheed L-1011-1/50/100/150/200/250 Tristar Pax,150,150,150
+L15,Lockheed L-1011-500 Tristar Pax,150,150,150
+L1F,Lockheed L-1011 Tristar Freighter,150,150,150
+L49,Lockheed L-1049 Super Contstellation,150,150,150
+L4T,LET 410,150,150,150
+LCH,Launch - Boat,150,150,150
+LMO,Limousine,150,150,150
+LOE,Lockheed L-188 Electra Pax,150,150,150
+LOF,Lockheed L-188 Electra Freighter,150,150,150
+LOH,Lockheed L-382 (L-100) Hercules,150,150,150
+LOM,Lockheed L-188 Electra Combi,150,150,150
+LRJ,Gates Learjet,150,150,150
+M11,McDonnell Douglas MD11 Pax,150,150,150
+M1F,McDonnell Douglas MD11 Freighter,150,150,150
+M1M,McDonnell Douglas MD11 Combi,150,150,150
+M80,McDonnell Douglas MD80,150,150,150
+M81,McDonnell Douglas MD81,150,150,150
+M82,McDonnell Douglas MD82,150,150,150
+M83,McDonnell Douglas MD83,150,150,150
+M87,McDonnell Douglas MD87,150,150,150
+M88,McDonnell Douglas MD88,150,150,150
+M90,McDonnell Douglas MD90,150,150,150
+MBH,Eurocopter (MBB) Bo.105,150,150,150
+MIH,MIL Mi-8,150,150,150
+MTL,Train - Metroliner,150,150,150
+MU2,Mitsubishi Mu-2,150,150,150
+ND2,Aerospatiale (Nord) 262 / Mohawk 298,150,150,150
+NDC,Aerospatiale SN.601 Corvette,150,150,150
+NDE,Eurocopter (Aerospatiale) AS355 Ecureuil 2,150,150,150
+NDH,Eurocopter (Aerospatiale) SA365 Daupin 2,150,150,150
+PA1,Piper light aircraft - single piston engine,150,150,150
+PA2,Piper light aircraft - twin piston engine,150,150,150
+PAG,Piper light aircraft,150,150,150
+PAT,Piper light aircraft - twin turboprop engine,150,150,150
+PL2,Pilatus PC-12,150,150,150
+PL6,Pilatus PC-6 Turbo Porter,150,150,150
+PN6,Partenavia P.68,150,150,150
+RFS,Road Feeder Service - Cargo Truck,150,150,150
+S20,Saab 2000,150,150,150
+S58,Sikorsky S-58T,150,150,150
+S61,Sikorsky S-61,150,150,150
+S76,Sikorsky S-76,150,150,150
+SF3,Saab SF340A/B,150,150,150
+SH3,Shorts SD.330,150,150,150
+SH6,Shorts SD.360,150,150,150
+SHB,Shorts SC-5 Belfast,150,150,150
+SHS,Shorts SC-7 Skyvan,150,150,150
+SSC,Aerospatiale/BAC Concorde,100,100,100
+SWM,Fairchild (Swearingen) Metro/Merlin/Expediter,150,150,150
+T20,Tupolev Tu204,150,150,150
+TAT,Train - Auto Train,150,150,150
+TCM,Train - Commuter Train,150,150,150
+TEE,Train - Trans-Europe Express,150,150,150
+TGV,Train - Train a Grand Vitesse,150,150,150
+THS,Train - High Speed Train,150,150,150
+THT,Train - Hotel Train,150,150,150
+TIC,Train - Inter-City Train,150,150,150
+TRN,Train - All types,150,150,150
+TSL,Train - Sleeper Train,150,150,150
+TU3,Tupolev Tu134,150,150,150
+TU5,Tupolev Tu154,150,150,150
+UNKNOWN,Unknown,40,100,140
+VCV,Vickers Visconut,150,150,150
+WWP,Israel Aircraft Industries 1124 Westwind,150,150,150
+YK2,Yakovlev Yak-42,150,150,150
+YK4,Yakovlev Yak-42,150,150,150
+YN2,Harbin Yunshuji Y12,150,150,150
+YN7,Xian Ynshuji Y7,150,150,150
+YS1,NAMC YS-11,150,150,150

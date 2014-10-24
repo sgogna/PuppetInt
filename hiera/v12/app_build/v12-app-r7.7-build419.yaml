@@ -1,0 +1,27 @@
+---
+v12_app_build:
+  jdk_version: '7u67'
+  tomcat_version: '7.0.54'
+  warfiles:
+    war1:
+      app_name: 'SSW2010.server'
+      war_file: 'v12web/SSW2010.server-ssw2010R7.7-419.war'
+  catalina_opts:
+  - '-Xms4096m'
+  - '-Xmx4096m'
+  - '-XX:PermSize=512m'
+  - '-XX:MaxPermSize=512m'
+  - '-XX:MaxNewSize=1024m'
+  - '-XX:NewSize=1024m'
+  - '-XX:+UseConcMarkSweepGC'
+  - '-XX:+CMSPermGenSweepingEnabled'
+  - '-XX:+CMSClassUnloadingEnabled'
+  - '-XX:CMSInitiatingOccupancyFraction=70'
+  - '-XX:+UseCMSInitiatingOccupancyOnly'
+  - '-Dnet.sf.ehcache.use.classic.lru=true'
+  - '-XX:ThreadStackSize=512'
+ #OTHER
+  - '-Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false'
+  - '-Dorg.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER=true'
+ #JDBC
+  - '-Doracle.jdbc.maxCachedBufferSize=20'

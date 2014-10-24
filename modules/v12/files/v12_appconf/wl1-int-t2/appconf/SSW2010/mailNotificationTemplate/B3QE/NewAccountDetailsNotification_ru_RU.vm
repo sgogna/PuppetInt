@@ -1,0 +1,33 @@
+Profile Created
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Profile Created</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+body, p { font: 10pt Verdana; }
+</style>
+</head>
+<body>
+Уважаемый/ая $User.firstName $User.lastName, <br>   
+
+Поздравляем Вас с успешным созданием личного профиля. <br>  
+Ваш номер участника - $User.username. Пожалуйста, запишите этот номер и используйте его для доступа к своему аккаунту. <br>  
+Чтобы накапливать бонусные мили на рейсах Vietnam Airlines и других авиакомпаний альянса SkyTeam, пожалуйста, указывайте ваш номер участника $User.username при бронировании билетов, на стойке регистрации в аэропорту, а также при пользовании услугами других партнеров программы GLP. <br>  
+Ваша постоянная Серебряная карта будет выслана Вам по адресу, указанному при регистрации, в период от 3 до 6 недель после совершения первого соответствующего перелета и зачисления миль на Ваш счет.    <br>  
+Мы с радостью ждем встречи с Вами на борту наших самолетов. <br>  
+С наилучшими пожеланиями, <br>  
+
+Golden Lotus Plus – Vietnam Airlines<br>  
+200 Nguyen Son Str, Long Bien Dist, Ha Noi, Viet Nam. <br>  
+Сайт: http://www.vietnamairlines.com<br>  
+Email: glp@vietnamairlines.com<br>  
+Тел: +844 38 730314 (в рабочее время) <br>  
+Факс: +844 38 273003<br>  
+Для Платиновых и Золотых участников: <br>  
+Тел: +844 38 738738 (в рабочее время) <br>  
+Email: premium.glp@vietnamairlines.com <br><br>
+
+
+</body>
+</html>

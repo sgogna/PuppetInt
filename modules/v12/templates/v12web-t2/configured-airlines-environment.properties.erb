@@ -1,0 +1,33 @@
+# List configured airlines here
+
+configuredAirlines = <% @h_databases.each do |$key, $val| -%><%= $key %>,<% end -%>
+
+# Configure a datasource overwrites for each airline below the default settings
+ 
+# Default settings
+default.database.defaultAutoCommit = false
+default.database.url =jdbc:oracle:thin:@ (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = sswhli491-vip)(PORT = 1527)) (ADDRESS = (PROTOCOL = TCP)(HOST = sswhli492-vip)(PORT = 1527)) (LOAD_BALANCE = yes) (FAILOVER=on)  (CONNECT_DATA =  (SERVER = SHARED)  (SERVICE_NAME = SSWBEI1)  (FAILOVER_MODE =  (TYPE = SESSION)  (METHOD = BASIC)(RETRIES = 180)(DELAY = 5) )  )  )
+default.database.pool.initialSize=50
+default.database.pool.maxActive=100
+
+#default..database.url = jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP) (HOST = sswhlc291-vip.sabre.com) (PORT = 1527)) (ADDRESS = (PROTOCOL = TCP) (HOST = sswhlc292-vip.sabre.com) (PORT = 1527)) (CONNECT_DATA = (SERVICE_NAME = SSWIBEC)))
+default.database.jdbcCompliantTruncation = false
+default.database.driverClassName = oracle.jdbc.driver.OracleDriver
+default.quartz.database.url = ${default.database.url}
+
+<% @h_databases.each do |$key, $val| -%>
+#
+# <%= $key %> DB settings
+#<%= $val['prefix'] %>.connection = <%= $val['connection'] %>
+#
+<%= $val['prefix'] %>.database.username = <%= $val['user'] %>
+<%= $val['prefix'] %>.database.password = <%= $val['password'] %>
+<%= $val['prefix'] %>.quartz.database.username = ${<%= $val['prefix'] %>.database.username}
+<%= $val['prefix'] %>.quartz.database.password = ${<%= $val['prefix'] %>.database.password}
+<%= $val['prefix'] %>.database.rootUsername = <%= $val['user'] %>
+<%= $val['prefix'] %>.database.rootPassword = <%= $val['password'] %>
+<%= $val['prefix'] %>.quartz.database.rootUsername = ${<%= $val['prefix'] %>.database.rootUsername}
+<%= $val['prefix'] %>.quartz.database.rootPassword = ${<%= $val['prefix'] %>.database.rootPassword}
+
+<% end -%>
+

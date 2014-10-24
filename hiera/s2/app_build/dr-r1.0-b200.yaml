@@ -1,0 +1,4 @@
+s2_app_build:
+  s2_package: dr/rules-processor-dist-1.0-b200.tar.gz
+  s2_app_name: rules-processor
+  jdk_version: 7u65

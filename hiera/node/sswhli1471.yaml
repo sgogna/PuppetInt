@@ -1,0 +1,14 @@
+---
+s2_instances:
+  inst8:
+    inst_num: 8
+    s2_cluster: 's2dr1-int'
+    ensure: 'running'
+    #ensure: 'stopped'
+  inst9:
+    inst_num: 9
+    s2_cluster: 's2dr1-load'
+    ensure: 'running'
+
+ssw_facts::env_type: 'int'
+ssw_facts::tier: '2'

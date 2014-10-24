@@ -1,0 +1,13 @@
+---
+s2_instances:
+  inst1:
+    inst_num: 1
+    s2_cluster: 's2dr2-int'
+    ensure: 'running'
+  inst2:
+    inst_num: 2
+    s2_cluster: 's2dr3-int'
+    ensure: 'running'
+
+ssw_facts::env_type: 'int'
+ssw_facts::tier: '2'

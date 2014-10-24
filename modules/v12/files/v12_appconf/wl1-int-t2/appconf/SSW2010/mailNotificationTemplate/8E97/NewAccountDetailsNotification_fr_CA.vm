@@ -1,0 +1,28 @@
+Profile Created
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>FIRST AIR - Nouveau Profil Créé</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+body, p { font: 10pt Verdana; }
+</style>
+</head>
+<body>
+Bienvenue $User.firstName $User.lastName,
+<br><br>
+Félicitations. Votre profil a été créé avec succès.
+<br><br>
+Ce qui suit est votre nouveau nom d'utilisateur. Nous vous recommandons de conserver cet e-mail ou de prendre note de votre ID de connexion. Il est nécessaire de se connecter à votre profil. 
+<br><br>
+Nom d'utilisateur: $User.username
+<br><br>
+First Air reconnaît votre droit à la vie privée et s'engage envers la protection de vos renseignements personnels. Nous vous suggérons de consulter notre politique de confidentialité qui est disponible sur http://www.firstair.ca/fr/privacy/ à votre meilleure convenance.
+<br><br>
+Nous vous remercions de votre confiance et espérons vous aider dans vos projets de voyages prochainement.
+<br><br>
+Je vous remercie.
+<br><br>
+* Ceci est un système de messagerie automatisé. S'il vous plaît ne pas répondre. Si vous avez des préoccupations au sujet de ce message ou si vous avez reçu ce message par erreur, s'il vous plaît contactez-nous au 1-800-267-1247.
+</body>
+</html>

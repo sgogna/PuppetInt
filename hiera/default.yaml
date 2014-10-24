@@ -1,0 +1,9 @@
+---
+classes:
+ - zabbix::agent
+ - puppet
+ - troubleshooting-scripts
+ - ssw_facts
+
+puppet::version: '3.6.2-r3-SSW'
+troubleshooting-scripts::version: '1.4.10'

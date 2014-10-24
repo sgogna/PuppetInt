@@ -1,0 +1,10 @@
+---
+:backends:
+ - yaml
+
+:hierarchy:
+ - node/%{hostname}
+ - default
+
+:yaml:
+ :datadir: /apps/puppet/etc/puppet/hiera

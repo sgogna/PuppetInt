@@ -1,0 +1,22 @@
+# meals
+# code, description
+# one line per meal
+AVML, Asian Vegetarian Meal
+BBML, Baby Food
+BLML, Bland Meal
+CHML, Child Meal
+DBML, Diabetic Meal
+FPML, Fruit Meal
+GFML, Gluten Free Meal
+HFML, High Fibre Meal
+KSML, Kosher Meal
+LCML, Low Calorie Meal
+LFML, Low Fat Meal
+LPML, Low Protein Meal
+LSML, No Salt / Low Sodium Meal
+MOML, Moslem Meal
+NLML, No Dairy Meal
+PRML, Low Purin Meal
+VGML, Western Vegetarian Meal
+VLML, Vegetarian Lacto Ovo Meal
+STML, Standard Meal

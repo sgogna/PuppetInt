@@ -1,0 +1,15 @@
+DebugLevel=3
+LogFile=
+
+Timeout=30
+MaxLinesPerSecond=1000
+BufferSize=65535
+
+StartAgents=5
+Server=sswvlp6899,sswvlp4899,sswhlp060,sswvlc6899,sswvli6899
+ServerActive=sswvlp6899
+EnableRemoteCommands=1
+
+#custom
+UserParameter=redis.info[*],if [ '$2' ]; then echo `redis-cli 'INFO' | grep '^$1:' | cut -d : -f 2|tr ',' '\n'|grep '$2='|cut -d = -f 2`|sed 's/^$/0/'; else  redis-cli 'INFO' | grep '^$1:' | cut -d : -f 2;fi
+UserParameter=ssl.exp.date[*],EXP_DATE="`curl -v -k -x "http://www-ad-proxy.sabre.com:80" -U sg0920208:abcd1234 https://$1 2>&1|grep "expire date:"|cut -c 17-`"; [[ $EXP_DATE != "" ]] && date -d "$EXP_DATE" +%s || echo 0

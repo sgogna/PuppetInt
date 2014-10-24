@@ -1,0 +1,25 @@
+#!/bin/bash
+
+export JAVA_HOME=<%= @dest_path %>/jdk
+
+cd <%= @dest_path %>/<%= @s2_app_name %>
+
+case $1 in
+	"start")
+		<%= @dest_path %>/<%= @s2_app_name %>/start.sh -p <%= @service_http_port %> -r <%= @service_jmx_registry_port %> -j <%= @service_jmx_port %> -s <%= @service_shutdown_port %> -h <%= @service_jmx_http_port %> -e <%= @service_environment %>
+		;;
+	"stop")
+		if [ -f <%= @dest_path %>/<%= @s2_app_name %>/port ]; then
+			<%= @dest_path %>/<%= @s2_app_name %>/stop.sh
+		else
+			pkill -f "catalina.home=<%= @dest_path %>/<%= @s2_app_name %>"
+			exit 0
+		fi
+		;;
+	"status")
+		cat <%= @dest_path %>/<%= @s2_app_name %>/port
+		;;
+	*)
+		echo "require parameter: start|stop|restart|disable"
+		;;
+esac

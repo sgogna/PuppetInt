@@ -1,0 +1,5 @@
+#PropertyName, #PropertyValue
+MaintenanceMode,false
+SearchLockMode,false
+WorkingMode,true
+gds.sabre.mts.enabled,true

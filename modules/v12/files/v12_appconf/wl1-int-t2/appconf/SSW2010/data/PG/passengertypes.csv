@@ -1,0 +1,5 @@
+# Code, Min Age, Max Age, requires seat, maximumAllowed, minimumAllowed, defaultSelected
+ADT,14,100, true,9,1,1
+CHD,0,13, true,9,0,0
+INF,0,1, false,3,0,0
+YTH,12,25,TRUE,9,0,0

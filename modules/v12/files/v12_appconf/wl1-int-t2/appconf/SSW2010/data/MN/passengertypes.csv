@@ -1,0 +1,7 @@
+# Code, Min Age, Max Age, requires seat, maximumAllowed, minimumAllowed, defaultSelected, negoCode, standalone, combinable
+ADT,14,100, true,9,1,1,NEG,true,true
+CHD,2,14, true,9,0,0,CNE,false,true
+INF,0,2, false,3,0,0,INE,false,true
+# 2011/03/24 Ben Szymanski: temporarily changing youth type from "YNE" to "NEG" to act like adult so we get IntelliSell results so we can test insurance for youths
+YTH,12,25,TRUE,9,0,0,NEG,false,true
+FFP,0,100,true,9,0,0,FFP,false,true

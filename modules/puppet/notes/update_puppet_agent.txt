@@ -1,0 +1,7 @@
+1. get new version from:
+	http://ltxl0802.sgdcelab.sabre.com:8080/
+2. save it in: /apps/puppet_shared_files/puppet
+3. file convention for example: installer-puppet-3.6.2-r3-SSW.sh
+	this is version to use in step '4': 3.6.2-r3-SSW
+4. update hiera/default.yaml key:
+	puppet::version: 'the version from step 3'

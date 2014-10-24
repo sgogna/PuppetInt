@@ -1,0 +1,5 @@
+improve augeas to remove, not replace:
+- jre/lib/security/java.security (remove MD2 from: jdk.certpath.disabledAlgorithms)
+
+testing:
+./bin/puppet apply --config /dev/null -e "augeas { 'foo': lens => '...', incl => 'file here', changes => ['something to change'], }" --debug

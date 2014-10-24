@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration
+  PUBLIC "-//Jakarta Apache//log4j 1.0//EN" "log4j.dtd">
+<log4j:configuration debug="true" xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+<appender name="console" class="org.apache.log4j.ConsoleAppender">
+  <layout class="au.com.eb2.log4j.MaskCreditNumberPatternLayout">
+      <param name="ConversionPattern" value="%d %p [%t] %c{1} - %m%n"/>
+  </layout>
+</appender>
+
+<appender name="file" class="au.com.eb2.log4j.DatedFileAppender">
+  <param name="prefix" value="qtripNG_SSW2010_"/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <layout class="au.com.eb2.log4j.MaskCreditNumberPatternLayout">
+      <param name="ConversionPattern" value="[%d{ISO8601}] [%t] [%p] [%c{1}] [%x] [%m]%n"/>
+  </layout>
+</appender>
+
+<appender name="warning" class="au.com.eb2.log4j.DatedDailyFileAppender">
+  <param name="prefix" value="SSW2010.server.warn."/>
+  <param name="suffix" value=".log"/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <layout class="au.com.eb2.log4j.MaskCreditNumberPatternLayout">
+      <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss}:%p:%t:%m%n"/>
+  </layout>
+</appender>
+
+<appender name="ELoggingFileLog" class="au.com.eb2.log4j.DatedDailyFileAppender">
+  <param name="prefix" value="eLoggingServer."/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <layout class="org.apache.log4j.PatternLayout">
+        <param name="ConversionPattern" value="%d %r [%t] %-5p %c{1} %x - %m%n"/>
+  </layout>
+</appender>
+
+<!--appender name="ASR" class="au.com.eb2.log4j.DatedFileAppender">
+  <param name="prefix" value="b6serv_ASR."/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <layout class="au.com.eb2.log4j.MaskCreditNumberPatternLayout">
+        <param name="ConversionPattern" value="[%d{ISO8601}] [%t] [%p] [%c{1}] [%x] [%m]%n"/>
+  </layout>
+</appender-->
+
+<!--appender name="eurocommerce" class="au.com.eb2.log4j.DatedFileAppender">
+  <param name="prefix" value="b6serv_eurocommerce."/>
+  <param name="suffix" value=".log"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <param name="append" value="true"/>
+  <layout class="au.com.eb2.log4j.MaskCreditNumberPatternLayout">
+      <param name="ConversionPattern" value="[%d{ISO8601}] [%t] [%p] [%c{1}] [%x] [%m]%n"/>
+  </layout>
+</appender-->
+
+<!--appender name="cxfFile" class="au.com.eb2.log4j.DatedFileAppender">
+  <param name="prefix" value="b6serv_cxf_logs."/>
+  <param name="suffix" value=".log"/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{ISO8601}] [%t] [%p] [%c{1}] [%x] [%m]%n"/>
+  </layout>
+</appender-->
+
+<appender name="ccpaymentinfolog" class="au.com.eb2.log4j.DatedFileAppender">
+  <param name="prefix" value="testCreditCardPaymentReport_SSW2010_"/>
+  <param name="suffix" value=".csv"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <param name="append" value="true"/>
+  <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%m%n"/>
+  </layout>
+</appender>
+
+<appender name="searchlog" class="au.com.eb2.log4j.DatedDailyFileAppender">
+  <param name="prefix" value="searchReport_SSW2010_"/>
+  <param name="suffix" value=".csv"/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <param name="appendHeader" value="true"/>
+  <param name="header" value="Date,Time,GUI Language,User's Country,Airline,City From,City To,Outbound Start Date,Outbound End Date,Return Start Date,Return End Date,Num Seats,Youth Only,Senior Only,Cabin Class,Account ID,Account Name,OutBoundDateRange,InBoundDateRange,SearchOrigin,Was Error,Results Returned,Search Time (secs),Num of Polls,Num Amadeus Hits,Num Concurrent Searches,IP Address,Session Id,Num Active Sessions,Fares Retrieved,Fares Processed,Flts Ret'd Out,Flts Proc'd Out,Flts Ret'd In,Flts Proc'd In,Error Message,Search Mode"/>
+  <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%m%n"/>
+  </layout>
+</appender>
+
+<appender name="secondLevelCachelog" class="au.com.eb2.log4j.DatedDailyFileAppender">
+  <param name="prefix" value="secondLevelCacheStatistic_SSW2010_"/>
+  <param name="suffix" value=".csv"/>
+  <param name="append" value="false"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <param name="appendHeader" value="true"/>
+  <param name="header" value="Cache Name,CacheHits,CacheMisses,InMemoryHits,OnDiskHits,StatisticsAccuracy"/>
+  <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%m%n"/>
+  </layout>
+</appender>
+
+<appender name="gdsCommandsStatisticslog" class="au.com.eb2.log4j.DatedDailyFileAppender">
+  <param name="prefix" value="gdsCommandsStatistics_SSW2010_"/>
+  <param name="suffix" value=".csv"/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <param name="appendHeader" value="true"/>
+  <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%m%n"/>
+  </layout>
+</appender>
+
+<appender name="pciFile" class="au.com.eb2.log4j.DatedDailyFileAppender">
+  <param name="prefix" value="pciLogger_SSW2010_server_"/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <layout class="au.com.eb2.log4j.MaskCreditNumberPatternLayout">
+    <param name="ConversionPattern" value="[%d{ISO8601}] [%t] [%x] [%m]%n"/>
+  </layout>
+</appender>
+
+<appender name="sabreAuthFailureMail" class="org.apache.log4j.net.SMTPAppender">
+  <param name="subject" value="Session authentication failure notification"/>
+  <param name="to" value="developers.ssweb2@sabre.com"/>
+  <param name="from" value="developers.ssweb2@sabre.com"/>
+  <param name="SMTPHost" value="151.193.220.17"/>
+  <layout class="au.com.eb2.log4j.MaskCreditNumberPatternLayout">
+      <param name="ConversionPattern" value="%m%n"/>
+  </layout>
+</appender>
+
+<appender name="ASYNCfile" class="org.apache.log4j.AsyncAppender">
+            <param name="threshold" value="INFO"/>
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="file"/>
+</appender>
+
+<appender name="ASYNCconsole" class="org.apache.log4j.AsyncAppender">
+            <param name="threshold" value="OFF"/>
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="console"/>
+</appender>
+
+<appender name="ASYNCwarning" class="org.apache.log4j.AsyncAppender">
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <param name="threshold" value="WARN"/>
+            <appender-ref ref="warning"/>
+</appender>
+
+<appender name="ASYNCELoggingFileLog" class="org.apache.log4j.AsyncAppender">
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="ELoggingFileLog"/>
+</appender>
+
+<appender name="ASYNCasr" class="org.apache.log4j.AsyncAppender">
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="ASR"/>
+</appender>
+
+<appender name="ASYNCcxfFile" class="org.apache.log4j.AsyncAppender">
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="cxfFile"/>
+</appender>
+
+<appender name="ASYNCccpaymentinfolog" class="org.apache.log4j.AsyncAppender">
+            <param name="threshold" value="OFF"/>
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="ccpaymentinfolog"/>
+</appender>
+
+<appender name="ASYNCsabreAuthFailureMail" class="org.apache.log4j.AsyncAppender">
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="sabreAuthFailureMail"/>
+</appender>
+
+<appender name="ASYNCgdsCommandsStatisticslog" class="org.apache.log4j.AsyncAppender">
+            <param name="threshold" value="OFF"/>
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="gdsCommandsStatisticslog"/>
+</appender>
+
+<appender name="ASYNCsecondLevelCachelog" class="org.apache.log4j.AsyncAppender">
+            <param name="threshold" value="INFO"/>
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="secondLevelCachelog"/>
+</appender>
+
+<appender name="ASYNCsearchlog" class="org.apache.log4j.AsyncAppender">
+            <param name="threshold" value="OFF"/>
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="searchlog"/>
+</appender>
+
+<appender name="ASYNCeurocommerce" class="org.apache.log4j.AsyncAppender">
+            <param name="BufferSize" value="500"/>
+            <param name="blocking" value="false"/>
+            <appender-ref ref="eurocommerce"/>
+</appender>
+
+<appender name="ASYNCpciFile" class="org.apache.log4j.AsyncAppender">
+  <param name="BufferSize" value="500"/>
+  <param name="blocking" value="false"/>
+  <appender-ref ref="pciFile"/>
+</appender>
+
+<logger name="com.eb2.qtrip.main.util.payment.CreditCardPaymentInformationCsvWriter" additivity="false">
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCccpaymentinfolog"/>
+</logger>
+
+<logger name="org.springframework.remoting.support.RemoteInvocationTraceInterceptor" additivity="false">
+  <level value="WARN"/>
+    <appender-ref ref="ASYNCfile"/>
+    <appender-ref ref="ASYNCconsole"/>
+    <appender-ref ref="ASYNCwarning"/>
+</logger>
+
+<logger name="com.eb2.qtrip.main.util.search.report.SearchStatisticCsvWriter" additivity="false">
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCsearchlog"/>
+</logger>
+
+<logger name="com.eb2.qtrip.main.service.statistics.SecondLeveCacheStatisticsWriter" additivity="false">
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCsecondLevelCachelog"/>
+</logger>
+
+<logger name="com.eb2.qtrip.main.service.statistics.GdsStatisticsWriter" additivity="false">
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCgdsCommandsStatisticslog"/>
+</logger>
+
+<logger name="com.sabre.web2.adapter.psp.eurocommerce" additivity="false">
+  <level value="INFO"/>
+    <appender-ref ref="ASYNCeurocommerce"/>
+</logger>
+
+<logger name="com.eb2.airline.b6.server.service.purchase.eurocommerce" additivity="false">
+  <level value="INFO"/>
+    <appender-ref ref="ASYNCeurocommerce"/>
+</logger>
+
+<logger name="com.eb2.adapter.gds.sabre.session.SabreSessionFactory" additivity="false">
+  <level value="ERROR"/>
+  <appender-ref ref="ASYNCsabreAuthFailureMail"/>
+</logger>
+
+<logger name="com.eb2.qtrip.model.fare.rule" additivity="false">
+  <level value="INFO"/>
+    <appender-ref ref="ASYNCfile"/>
+    <appender-ref ref="ASYNCconsole"/>
+    <appender-ref ref="ASYNCwarning"/>
+</logger>
+
+<logger name="org.springframework.beans.factory.support.DefaultListableBeanFactory" additivity="false">
+  <level value="WARN"/>
+  <appender-ref ref="ASYNCfile"/>
+    <appender-ref ref="ASYNCconsole"/>
+    <appender-ref ref="ASYNCwarning"/>
+</logger>
+
+<logger name="event-logger" additivity="false">
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCELoggingFileLog"/>
+</logger>
+
+<logger name="event-error-logger" additivity="false">
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCELoggingFileLog"/>
+</logger>
+
+<logger name="event-monitor-logger" additivity="false">
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCELoggingFileLog"/>
+</logger>
+
+<logger name="com.eb2.adapter.gds.sabre.asr" additivity="false">
+  <level value="DEBUG"/>
+  <appender-ref ref="ASYNCasr"/>
+</logger>
+
+<logger name="org.apache.cxf" additivity="false">
+  <level value="DEBUG"/>
+  <appender-ref ref="ASYNCcxfFile"/>
+</logger>
+
+<logger name="org.apache.cxf.interceptor.LoggingInInterceptor">
+  <level value="DEBUG"/>
+  <appender-ref ref="ASYNCfile"/>
+</logger>
+
+<logger name="org.apache.cxf.interceptor.LoggingOutInterceptor">
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCfile"/>
+</logger>
+
+
+<!-- T2 PNR logger -->
+<appender name="file-pnrs" class="au.com.eb2.log4j.DatedDailyFileAppender">
+  <param name="prefix" value="SSW2010.PNRs."/>
+  <param name="append" value="true"/>
+  <param name="directory" value="${log.directory.base}/SSW2010/${hostname}/inst${instance.number}"/>
+  <layout class="org.apache.log4j.PatternLayout">
+    <param name="ConversionPattern" value="%d [%t] %m%n"/>
+  </layout>
+  <filter class="org.apache.log4j.varia.StringMatchFilter">
+    <param name="stringToMatch" value="Created PNR" />
+    <param name="acceptOnMatch" value="true" />
+  </filter>
+  <filter class="org.apache.log4j.varia.DenyAllFilter" />
+</appender>
+<appender name="ASYNCfile-pnrs" class="org.apache.log4j.AsyncAppender">
+  <param name="BufferSize" value="10"/>
+  <param name="blocking" value="false"/>
+  <appender-ref ref="file-pnrs"/>
+</appender>
+<logger name="com.sabre.adapter.gds.reservation.air.actions.CreateGDSBookingAction" >
+  <level value="INFO"/>
+  <appender-ref ref="ASYNCfile-pnrs"/>
+</logger>
+<!-- T2 PNR logger end -->
+
+
+<logger name="com.eb2" additivity="false">
+    <level value="DEBUG"/>
+    <appender-ref ref="ASYNCfile"/>
+    <appender-ref ref="ASYNCwarning"/>
+</logger>
+
+<logger name="au.com.eb2" additivity="false">
+    <level value="DEBUG"/>
+    <appender-ref ref="ASYNCfile"/>
+    <appender-ref ref="ASYNCwarning"/>
+</logger>
+
+<logger name="com.sabre" additivity="false">
+  <level value="DEBUG"/>
+    <appender-ref ref="ASYNCfile"/>
+    <appender-ref ref="ASYNCwarning"/>
+</logger>
+
+<logger name="pciLogger" additivity="false">
+    <level value="INFO"/>
+    <appender-ref ref="ASYNCpciFile"/>
+</logger>
+
+<root>
+    <priority value="INFO"></priority>
+    <appender-ref ref="ASYNCfile"/>
+    <appender-ref ref="ASYNCwarning"/>
+</root>
+
+</log4j:configuration>

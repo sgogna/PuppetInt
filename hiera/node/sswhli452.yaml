@@ -1,0 +1,3 @@
+---
+ssw_facts::env_type: 'int'
+ssw_facts::tier: '1'
